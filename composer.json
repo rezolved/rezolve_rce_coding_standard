@@ -1,0 +1,13 @@
+{
+    "name": "rezolve/coding-standard",
+    "description": "Rezolve coding standard bases on magento 2",
+    "type": "metapackage",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Rezolve\\CodingStandard\\": "src/"
+        }
+    },
+    "minimum-stability": "dev",
+    "require": {}
+}
