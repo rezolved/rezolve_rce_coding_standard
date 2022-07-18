@@ -10,6 +10,6 @@
     },
     "minimum-stability": "dev",
     "require": {
-        "magento/magento-coding-standard": "^5.0"
+        "magento/magento-coding-standard": "v25"
     }
 }
