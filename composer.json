@@ -11,5 +11,6 @@
     "minimum-stability": "dev",
     "require": {
         "magento/magento-coding-standard": "v25"
+
     }
 }

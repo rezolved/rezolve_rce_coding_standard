@@ -53,7 +53,7 @@ use Rector\PHPUnit\Rector\ClassMethod\RemoveEmptyTestMethodRector;
 return static function (RectorConfig $rectorConfig): void {
     $rectorConfig->skip([
         __DIR__ . '/vendor',
-        __DIR__ . '/coding-standard',
+        __DIR__ . '/rezolve_rce_coding_standard',
         __DIR__ . '/Tests'
     ]);
 

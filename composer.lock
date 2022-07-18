@@ -4,20 +4,20 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "b2e05af333dd3642dcff48c0785603e7",
+    "content-hash": "19d6077d930a7c103d594ed1116dbadc",
     "packages": [
         {
             "name": "magento/magento-coding-standard",
-            "version": "25",
+            "version": "19",
             "source": {
                 "type": "git",
                 "url": "https://github.com/magento/magento-coding-standard.git",
-                "reference": "7be8305949f6683ff08534fbc22e5d42a1c4eba7"
+                "reference": "73d4423799ab21beb49516f966ab7304c4342bc4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/magento/magento-coding-standard/zipball/7be8305949f6683ff08534fbc22e5d42a1c4eba7",
-                "reference": "7be8305949f6683ff08534fbc22e5d42a1c4eba7",
+                "url": "https://api.github.com/repos/magento/magento-coding-standard/zipball/73d4423799ab21beb49516f966ab7304c4342bc4",
+                "reference": "73d4423799ab21beb49516f966ab7304c4342bc4",
                 "shasum": ""
             },
             "require": {
@@ -25,7 +25,7 @@
                 "ext-simplexml": "*",
                 "php": ">=7.3",
                 "phpcompatibility/php-compatibility": "^9.3",
-                "rector/rector": "^0.13.0",
+                "rector/rector": "^0.12.4",
                 "squizlabs/php_codesniffer": "^3.6.1",
                 "webonyx/graphql-php": "^14.9"
             },
@@ -50,9 +50,9 @@
             "description": "A set of Magento specific PHP CodeSniffer rules.",
             "support": {
                 "issues": "https://github.com/magento/magento-coding-standard/issues",
-                "source": "https://github.com/magento/magento-coding-standard/tree/v25"
+                "source": "https://github.com/magento/magento-coding-standard/tree/v19"
             },
-            "time": "2022-06-21T10:23:58+00:00"
+            "time": "2022-03-08T13:56:21+00:00"
         },
         {
             "name": "phpcompatibility/php-compatibility",
@@ -178,24 +178,24 @@
         },
         {
             "name": "rector/rector",
-            "version": "dev-main",
+            "version": "0.12.23",
             "source": {
                 "type": "git",
                 "url": "https://github.com/rectorphp/rector.git",
-                "reference": "ce84017a2498e4817ccd010531ac6948d783f839"
+                "reference": "690b31768b322db886b35845f8452025eba2cacb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/rectorphp/rector/zipball/ce84017a2498e4817ccd010531ac6948d783f839",
-                "reference": "ce84017a2498e4817ccd010531ac6948d783f839",
+                "url": "https://api.github.com/repos/rectorphp/rector/zipball/690b31768b322db886b35845f8452025eba2cacb",
+                "reference": "690b31768b322db886b35845f8452025eba2cacb",
                 "shasum": ""
             },
             "require": {
                 "php": "^7.2|^8.0",
-                "phpstan/phpstan": "^1.8"
+                "phpstan/phpstan": "^1.6"
             },
             "conflict": {
-                "phpstan/phpdoc-parser": "<1.6.2",
+                "phpstan/phpdoc-parser": "<1.2",
                 "rector/rector-cakephp": "*",
                 "rector/rector-doctrine": "*",
                 "rector/rector-laravel": "*",
@@ -205,14 +205,13 @@
                 "rector/rector-prefixed": "*",
                 "rector/rector-symfony": "*"
             },
-            "default-branch": true,
             "bin": [
                 "bin/rector"
             ],
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-main": "0.13-dev"
+                    "dev-main": "0.12-dev"
                 }
             },
             "autoload": {
@@ -227,7 +226,7 @@
             "description": "Instant Upgrade and Automated Refactoring of any PHP code",
             "support": {
                 "issues": "https://github.com/rectorphp/rector/issues",
-                "source": "https://github.com/rectorphp/rector/tree/main"
+                "source": "https://github.com/rectorphp/rector/tree/0.12.23"
             },
             "funding": [
                 {
@@ -235,7 +234,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2022-07-17T12:27:00+00:00"
+            "time": "2022-05-01T15:50:16+00:00"
         },
         {
             "name": "squizlabs/php_codesniffer",
