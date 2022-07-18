@@ -1,5 +1,5 @@
 {
-    "name": "rezolve/coding-standard",
+    "name": "rezolve/rezolve_rce_coding_standard",
     "description": "Rezolve coding standard bases on magento 2",
     "type": "metapackage",
     "license": "MIT",
@@ -10,6 +10,6 @@
     },
     "minimum-stability": "dev",
     "require": {
-        "magento/magento-coding-standard": "dev-develop"
+        "magento/magento-coding-standard": "^5.0"
     }
 }
