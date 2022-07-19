@@ -17,13 +17,16 @@ jobs:
       - uses: shivammathur/setup-php@v2
         with:
           php-version: '7.4'
-          tools: composer:v2, cs2pr
+          tools: composer:v2
 
       - name: Install Rezolve Coding Standard
         run: git clone https://${{ secrets.COMPOSER_GITHUB_TOKEN }}@github.com/rezolved/rezolve_rce_coding_standard.git && cd rezolve_rce_coding_standard && composer install && cd ..
 
+      - id: files
+        uses: jitterbit/get-changed-files@v1
+
       - name: Run Rector
-        run: cp -r rezolve_rce_coding_standard/src/rector.php rector.php && rezolve_rce_coding_standard/vendor/bin/rector process --ansi --no-progress-bar --dry-run  ./
+        run: cp -r rezolve_rce_coding_standard/src/rector.php rector.php && rezolve_rce_coding_standard/vendor/bin/rector process --ansi --no-progress-bar --dry-run ${{ steps.files.outputs.added_modified }}
 
       - name: Run Phpcs
         uses: tinovyatkin/action-php-codesniffer@v1
