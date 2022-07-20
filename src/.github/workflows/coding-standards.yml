@@ -20,7 +20,7 @@ jobs:
           tools: composer:v2
 
       - name: Install Rezolve Coding Standard
-        run: git clone https://${{ secrets.COMPOSER_GITHUB_TOKEN }}@github.com/rezolved/rezolve_rce_coding_standard.git && cd rezolve_rce_coding_standard && composer install && cd ..
+        run: git clone https://github.com/rezolved/rezolve_rce_coding_standard.git && cd rezolve_rce_coding_standard && composer install && cd ..
 
       - id: files
         uses: jitterbit/get-changed-files@v1
