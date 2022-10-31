@@ -77,7 +77,5 @@ return static function (RectorConfig $rectorConfig): void {
             break;
     }
 
-    print_r($setsArray);
-
     $rectorConfig->sets($setsArray);
 };
