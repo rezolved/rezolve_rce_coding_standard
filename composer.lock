@@ -4,26 +4,26 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "01c92bf549ee394bc0454e1d39506c7f",
+    "content-hash": "b2e05af333dd3642dcff48c0785603e7",
     "packages": [
         {
             "name": "magento/magento-coding-standard",
-            "version": "27",
+            "version": "25",
             "source": {
                 "type": "git",
                 "url": "https://github.com/magento/magento-coding-standard.git",
-                "reference": "097bda3e015f35dc7c2efc0b8c7a7d8dfc158a63"
+                "reference": "7be8305949f6683ff08534fbc22e5d42a1c4eba7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/magento/magento-coding-standard/zipball/097bda3e015f35dc7c2efc0b8c7a7d8dfc158a63",
-                "reference": "097bda3e015f35dc7c2efc0b8c7a7d8dfc158a63",
+                "url": "https://api.github.com/repos/magento/magento-coding-standard/zipball/7be8305949f6683ff08534fbc22e5d42a1c4eba7",
+                "reference": "7be8305949f6683ff08534fbc22e5d42a1c4eba7",
                 "shasum": ""
             },
             "require": {
                 "ext-dom": "*",
                 "ext-simplexml": "*",
-                "php": "^8.1||^8.2",
+                "php": ">=7.3",
                 "phpcompatibility/php-compatibility": "^9.3",
                 "rector/rector": "^0.13.0",
                 "squizlabs/php_codesniffer": "^3.6.1",
@@ -50,9 +50,9 @@
             "description": "A set of Magento specific PHP CodeSniffer rules.",
             "support": {
                 "issues": "https://github.com/magento/magento-coding-standard/issues",
-                "source": "https://github.com/magento/magento-coding-standard/tree/v27"
+                "source": "https://github.com/magento/magento-coding-standard/tree/v25"
             },
-            "time": "2022-10-17T15:19:28+00:00"
+            "time": "2022-06-21T10:23:58+00:00"
         },
         {
             "name": "phpcompatibility/php-compatibility",
