@@ -28,6 +28,7 @@ return static function (RectorConfig $rectorConfig): void {
         Rector\CodeQuality\Rector\If_\ExplicitBoolCompareRector::class,
         Rector\Php54\Rector\Array_\LongArrayToShortArrayRector::class,
         Rector\CodingStyle\Rector\ClassConst\VarConstantCommentRector::class,
+        Rector\CodingStyle\Rector\Stmt\NewlineAfterStatementRector::class,
 
         /**
          * dead block comments
