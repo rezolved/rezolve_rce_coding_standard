@@ -2,11 +2,13 @@
 <ruleset name="Rezolve-Mage2">
     <description>Rezolve Magento 2 Coding Standard</description>
     <!-- exclude sub vendor folder -->
-    <exclude-pattern>*/vendor/*</exclude-pattern>
+    <exclude-pattern>*/rezolve_rce_coding_standard/*</exclude-pattern>
     <!-- exclude node_modules folder -->
     <exclude-pattern>*/node_modules/*</exclude-pattern>
     <!-- exclude git -->
     <exclude-pattern>*/.git/*</exclude-pattern>
+    <exclude-pattern>*/Test/*</exclude-pattern>
+    <exclude-pattern>*/Fixtures/*</exclude-pattern>
 
     <rule ref="PSR12" />
 
