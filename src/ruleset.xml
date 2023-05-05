@@ -22,5 +22,6 @@
     <rule ref="./../vendor/magento/magento-coding-standard/Magento2" >
         <exclude name="Magento2.Annotation.MethodAnnotationStructure" />
         <exclude name="Magento2.Commenting.ClassPropertyPHPDocFormatting.Missing" />
+        <exclude name="Magento2.Annotation.MethodArguments.NoCommentBlock" />
     </rule>
 </ruleset>
