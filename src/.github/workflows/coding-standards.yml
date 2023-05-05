@@ -24,11 +24,12 @@ jobs:
       - name: Install Rezolve Coding Standard
         run: git clone https://github.com/rezolved/rezolve_rce_coding_standard.git && cd rezolve_rce_coding_standard && composer install && cd ..
 
-      - id: files
-        uses: jitterbit/get-changed-files@v1
+      - name: Get changed files
+        id: files
+        uses: tj-actions/changed-files@v35
 
       - name: Run Rector
-        run: cp -r rezolve_rce_coding_standard/src/rector.php rector.php && rezolve_rce_coding_standard/vendor/bin/rector process --ansi --no-progress-bar --dry-run ${{ steps.files.outputs.added_modified }}
+        run: cp -r rezolve_rce_coding_standard/src/rector.php rector.php && rezolve_rce_coding_standard/vendor/bin/rector process --ansi --no-progress-bar --dry-run ${{ steps.files.outputs.all_changed_files }}
 
       - name: Run Phpcs
         uses: tinovyatkin/action-php-codesniffer@v1
