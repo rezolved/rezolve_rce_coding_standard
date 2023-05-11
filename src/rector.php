@@ -19,9 +19,10 @@ use Rector\Set\ValueObject\SetList;
 
 return static function (RectorConfig $rectorConfig): void {
     $rectorConfig->skip([
-        __DIR__ . '/vendor',
-        __DIR__ . '/rezolve_rce_coding_standard',
-        __DIR__ . '/Tests',
+        '*/rezolve_rce_coding_standard',
+        '*/Tests',
+        '*/Test',
+        '*/Fixtures',
         /**
          * remove rules
          */
@@ -29,7 +30,9 @@ return static function (RectorConfig $rectorConfig): void {
         Rector\Php54\Rector\Array_\LongArrayToShortArrayRector::class,
         Rector\CodingStyle\Rector\ClassConst\VarConstantCommentRector::class,
         Rector\CodingStyle\Rector\Stmt\NewlineAfterStatementRector::class,
-
+        Rector\CodingStyle\Rector\Catch_\CatchExceptionNameMatchingTypeRector::class,
+        Rector\CodingStyle\Rector\Encapsed\EncapsedStringsToSprintfRector::class,
+        Rector\CodingStyle\Rector\Encapsed\WrapEncapsedVariableInCurlyBracesRector::class,
         /**
          * dead block comments
          */
